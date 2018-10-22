@@ -1,0 +1,1 @@
+module.exports.reCAPTCHA = require('./recaptcha-function').reCAPTCHA;
