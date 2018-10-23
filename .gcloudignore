@@ -17,4 +17,4 @@ node_modules
 #!include:.gitignore
 
 # Include in gcloud, not in git
-!secrets/google.js
+!secrets/
