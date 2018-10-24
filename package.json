@@ -4,7 +4,8 @@
   "description": "Tadhana helper functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.js",
+    "deploy": "gcloud beta functions deploy reCAPTCHA --region=europe-west1 --memory=128MB --runtime=nodejs8  --trigger-http --source=."
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,11 @@
   "dependencies": {
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cloud-function-test": "^1.0.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
   }
 }

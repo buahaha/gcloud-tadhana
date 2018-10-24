@@ -18,3 +18,5 @@ node_modules
 
 # Include in gcloud, not in git
 !secrets/
+
+test
